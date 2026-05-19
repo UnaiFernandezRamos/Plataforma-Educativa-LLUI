@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalls del Curs - Harward Campus Virtual</title>
+
+  <link rel="stylesheet" href="Css/reset.css">
+  <link rel="stylesheet" href="Css/variables.css">
+  <link rel="stylesheet" href="Css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="top-header">
+      <img style="height: 80px;" src="Assets/harward_foto.png" alt="Harvard">
+      <h1 class="title">HARWARD Campus virtual</h1>
+    </div>
+
+    <nav>
+      <div class="nav-container">
+        <div class="hamburguesa" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="menu">
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="cursos.html">Catàleg</a></li>
+          <li><a href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">Inici</a>
+        <a href="cursos.html">Catàleg</a>
+        <a href="sobre-nosaltres.html">Sobre nosaltres</a>
+        <a href="contacte.html">Contacte</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina activa">
+      <div class="course-detail">
+        
+        <a href="cursos.html" class="btn-back">
+          ← Tornar al Catàleg
+        </a>
+
+        <h1 id="course-title">Batxillerat Científic</h1>
+        
+        <div class="detail-grid">
+          <div class="detail-info">
+            <h2>Informació del curs</h2>
+            <p><strong>Durada:</strong> 2 anys</p>
+            <p><strong>Nivell:</strong> Batxillerat</p>
+            <p><strong>Modalitat:</strong> Presencial</p>
+            <p><strong>Places disponibles:</strong> 25</p>
+            
+            <h3>Descripció</h3>
+            <p>El Batxillerat Científic està orientat a aquells estudiants que volen continuar estudis universitaris relacionats amb ciències, enginyeria, medicina o tecnologia.</p>
+            
+            <h3>Assignatures principals</h3>
+            <ul>
+              <li>Matemàtiques</li>
+              <li>Física i Química</li>
+              <li>Biologia</li>
+              <li>Tecnologia</li>
+              <li>Anglès</li>
+            </ul>
+          </div>
+          
+            <div class="info-box">
+              <h3>Horari</h3>
+              <p>Matins: 8:00 - 14:30</p>
+
+          <div class="detail-sidebar">
+            <div class="price-box">
+              <h3>Preu</h3>
+              <p class="price">2.450 € / any</p>
+              <button class="btn-enroll">Inscriure'm al curs</button>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
+</body>
+</html>
