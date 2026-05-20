@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacte - Harward Campus Virtual</title>
+
+  <link rel="stylesheet" href="Css/reset.css">
+  <link rel="stylesheet" href="Css/variables.css">
+  <link rel="stylesheet" href="Css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+<div class="top-header">
+    <img style="height: 70px;" src="Assets/harward_foto.png" alt="Harvard" class="logo-img">
+    <h1 class="title">HARWARD Campus virtual</h1>
+</div>
+
+    <nav>
+      <div class="nav-container">
+        <div class="hamburguesa" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="menu">
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="cursos.html">Catàleg</a></li>
+          <li><a href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+          <li><a href="contacte.html" class="active">Contacte</a></li>
+        </ul>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">Inici</a>
+        <a href="cursos.html">Catàleg</a>
+        <a href="sobre-nosaltres.html">Sobre nosaltres</a>
+        <a href="contacte.html">Contacte</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina activa">
+      <h2>Contacte amb nosaltres</h2>
+      <p>Si tens qualsevol dubte o problema relacionat amb el campus virtual, pots enviar-nos un missatge.</p>
+
+      <form>
+        <input type="text" placeholder="Nom complet">
+        <input type="email" placeholder="Correu electrònic">
+        <textarea rows="5" placeholder="Escriu el teu missatge"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
+</body>
+</html>

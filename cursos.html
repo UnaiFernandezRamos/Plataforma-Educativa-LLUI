@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catàleg - Harward Campus Virtual</title>
+
+  <link rel="stylesheet" href="Css/reset.css">
+  <link rel="stylesheet" href="Css/variables.css">
+  <link rel="stylesheet" href="Css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+<div class="top-header">
+    <img style="height: 70px;" src="Assets/harward_foto.png" alt="Harvard" class="logo-img">
+    <h1 class="title">HARWARD Campus virtual</h1>
+</div>
+
+    <nav>
+      <div class="nav-container">
+        <div class="hamburguesa" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="menu">
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="cursos.html" class="active">Catàleg</a></li>
+          <li><a href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">Inici</a>
+        <a href="cursos.html">Catàleg</a>
+        <a href="sobre-nosaltres.html">Sobre nosaltres</a>
+        <a href="contacte.html">Contacte</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina activa">
+      <h2>Catàleg</h2>
+      <div class="grid">
+        <details class="course-card">
+          <summary>ESO <span class="arrow">⌄</span></summary>
+          <p>Educació Secundària Obligatòria amb assignatures bàsiques com matemàtiques, llengua, ciències i tecnologia.</p>
+        </details>
+
+        <details class="course-card">
+          <summary>Batxillerat <span class="arrow">⌄</span></summary>
+          <p>Et prepara per a la universitat o cicles formatius superiors.</p>
+             <details class="course-card">
+            <summary>Batxillerat Científic <span class="arrow">⌄</span></summary>
+                <p>Et prepara per a carreres científiques...</p>
+                <a href="curs-detall.html" class="btn-more">Veure detalls →</a>
+                </details>
+        </details>
+
+        <details class="course-card">
+          <summary>Grau Mitjà <span class="arrow">⌄</span></summary>
+          <p>Formació professional pràctica per entrar al món laboral.</p>
+        </details>
+
+        <details class="course-card">
+          <summary>Grau Superior <span class="arrow">⌄</span></summary>
+          <p>Formació avançada i especialitzada en diferents sectors professionals.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
+</body>
+</html>
