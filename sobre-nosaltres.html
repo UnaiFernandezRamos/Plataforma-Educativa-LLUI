@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosaltres - Harward Campus Virtual</title>
+
+  <link rel="stylesheet" href="Css/reset.css">
+  <link rel="stylesheet" href="Css/variables.css">
+  <link rel="stylesheet" href="Css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+<div class="top-header">
+    <img style="height: 70px;" src="Assets/harward_foto.png" alt="Harvard" class="logo-img">
+    <h1 class="title">HARWARD Campus virtual</h1>
+</div>
+
+    <nav>
+      <div class="nav-container">
+        <div class="hamburguesa" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="menu">
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="cursos.html">Catàleg</a></li>
+          <li><a href="sobre-nosaltres.html" class="active">Sobre nosaltres</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">Inici</a>
+        <a href="cursos.html">Catàleg</a>
+        <a href="sobre-nosaltres.html">Sobre nosaltres</a>
+        <a href="contacte.html">Contacte</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina activa">
+      <h2>Sobre nosaltres</h2>
+      <p>L’Institut Harward és un centre educatiu que imparteix ESO, Batxillerat i altres etapes educatives.
+        <br>Formem persones amb una base teòrica sòlida i una formació pràctica de qualitat, combinant classes teòriques amb activitats pràctiques en laboratoris i tallers equipats amb tecnologia actual.
+        <br><br>Des del primer dia, els alumnes participen en activitats pràctiques, projectes i treballs competencials que complementen el seu aprenentatge.
+       <br> El nostre model educatiu es basa en l’excel·lència acadèmica, l’actualització constant i un aprenentatge actiu i significatiu, on una part important de les hores són classes pràctiques i projectes reals.
+        <br><br>Oferim un seguiment personalitzat en un institut de mida humana i col·laborem amb l’entorn per garantir una formació completa i adaptada a les necessitats dels alumnes. A l’Institut Harward preparem els futurs professionals i ciutadans que construiran el futur. Aquí l’aprenentatge es viu amb les teves mans.</p>
+    </section>
+    <div style="text-align: center;">
+        <img style="height: 600px;align-self: center;" src="Assets/Profesorat.png" alt="">
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
+</body>
+</html>
